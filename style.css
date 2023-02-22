@@ -1,0 +1,319 @@
+
+
+/* Barra de Navegacion */
+.navbar{
+    position: fixed; /* Establece la posición fija para la barra de navegación */
+    padding: 2rem;
+    width: 100%;  
+    height: 70px;  
+    background-color: white;
+  }
+  .navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-nav .nav-link {
+    color: black;
+  }
+  /* Estilos generales*/
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+    .seccion-oscura{
+      /*background-color: #1b1b32;*/
+      color: white;
+    }
+    .seccion-clara{
+      color: black;
+      background-color: white;
+    }
+  .seccion-titulo-t{
+    font-size: 1.8rem;
+    padding: 35px 0;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+  .seccion-titulo-tt{
+    font-size: 1.8rem;
+    padding: 5px 0;
+    margin-top: 55px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+  .seccion-titulo{
+    font-size: 5rem;
+    margin-top: 50px;
+    padding: 5px 0;
+    margin: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    font-weight: bold;
+  }
+  .seccion-subtitulo{
+    font-size: 1.8rem;
+    padding: 5px 0;
+    margin-top: 1px;
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    
+  }
+  .seccion-descripcion{
+    font-size: 1rem;
+    color:black;
+  }
+  .seccion-texto{
+    margin-top: 100px;    
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+  .btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+  }
+  .texto-negro{
+    color: black;
+  }
+  .texto-blanco{
+    color: white;
+  }  
+  
+
+  /*Sobre Nosotros*/
+  .sobre-nosotros{
+    background-image: url('imagenes/fondo.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita en el fondo */
+    height: 600px;
+    padding: 5px;
+  }
+  .sobre-nosotros .contenedor{
+    max-width: 500px;
+    text-align: center;
+  }
+ 
+  /*Los trabajos que realizamos */
+  
+  .proyectos-recientes{
+    padding: 40px;
+  }
+  .proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    display: block;
+    transition: all 0.2s ease;
+  }
+  .proyectos-contenedor{
+    padding-top: 1px;
+    margin-bottom: 10px;
+    
+    max-width: 600px;
+  }
+  .overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .proyecto{
+    position: relative;
+  }
+  .proyecto:hover img{
+    opacity: 0.2;
+  }
+  .proyecto:hover .overlay{
+    opacity: 1.5;
+  }
+  .overlay .iconos-contenedor{
+    display: flex;
+  
+  }
+  .overlay i{
+    color: rgb(66, 23, 13);
+    font-size: 35px;
+    margin: 5px;
+  }
+
+  
+  /* Testimonios*/
+  .testimonios{
+    padding: 40px 40px 80px 40px ;
+  }
+  .testimonios .carousel{
+    max-width: 800px;
+  }
+  .carousel-item{
+    height: 450px;
+    
+  }
+  .carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  
+  }
+  .testimonio-imagen{
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+  }
+  .testimonio-texto{
+    max-width: 70%;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;  
+  }
+  .testimonio-info{
+    font-weight: bold;
+    text-align: center;  
+  }
+  .testimonio-info p{
+    margin-bottom: 0;
+  }
+  .testimonio-footer .cliente{
+    font-size: 1.2rem;
+  }
+  .testimonio-info .cargo{
+    font-size: 0.9rem;
+    color: #656060;
+  }
+  /* Contacto */
+  .contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+    margin-top: 180px;
+  }
+  .contacto .rectangulo{
+    margin-top: -6rem;
+    background-color: rgb(13, 110, 253);
+    border-radius:  20px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  .contacto .row{
+    width: 100%;
+    display: flex;
+    align-items:center;
+  }
+  .contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+  }
+  .contacto button{
+    color:white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  .contacto button i{
+    color:  white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .contacto button:hover{
+    background-color: white;
+    color: black;
+  }
+  .contacto button:hover i{
+    color: black;
+  }
+  /* pie de pagina (footer)*/
+
+  .footer-texto{
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-family: 'Quicksand', sans-serif;
+  }
+ 
+  .iconos-redes-sociales a{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    margin-top: 1px;
+    border: 2px solid #aeaeae;
+    border-radius: 50%;
+    transition:  all 0.2s ease-in;
+  }
+  .iconos-redes-sociales i{
+    color: #aeaeae;
+    font-size: 1rem;
+    transition: all 0.2s ease-in;
+  }
+  .iconos-redes-sociales a:hover {
+    background-color:  white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  .iconos-redes-sociales a:hover i{
+    color: rgb(13, 110, 253);
+  
+  }
+  .derechos-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }
+ 
+  
+  /*Media Query, Adaptable (Responsibo)*/
+  
+  @media screen and (max-width: 400px){
+    .overlay p {
+      font-size: 40px;
+    }
+    .overlay i{
+      font-size: 40px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    .navbar-brand{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .hero-inferior-imagen{
+      max-width: 600px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .testimonio-imagen{
+      height: 120px;
+      width: 120px;
+    }
+    .testimonio-texto{
+      font-size: 18px;
+    }
+  }
