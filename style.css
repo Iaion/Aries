@@ -5,7 +5,7 @@
     position: fixed; /* Establece la posición fija para la barra de navegación */
     padding: 2rem;
     width: 100%;  
-    height: 70px;  
+    height: 0.2rem;  
     background-color: white;
   }
   .navbar-collapse{
@@ -23,62 +23,49 @@
     justify-content: center;
   }
  
-    .seccion-oscura{
-      /*background-color: #1b1b32;*/
-      color: white;
-    }
-    .seccion-clara{
-      color: black;
-      background-color: white;
-    }
   .seccion-titulo-t{
     font-size: 1.8rem;
-    padding: 35px 0;
-    margin-top: 50px;
+    padding: 1.2rem;
+    margin-top: 1rem;
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: bold;
   }
   .seccion-titulo-tt{
     font-size: 1.8rem;
-    padding: 5px 0;
-    margin-top: 55px;
+    padding: 1.2rem;
+    margin-top: 1rem;
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: bold;
   }
   .seccion-titulo{
     font-size: 5rem;
-    margin-top: 50px;
-    padding: 5px 0;
-    margin: 1px;
+    margin-top: 1.2rem;
+    padding: 1rem;    
     font-family: 'Poppins', sans-serif;
     color: red;
     font-weight: bold;
   }
   .seccion-subtitulo{
     font-size: 1.8rem;
-    padding: 5px 0;
-    margin-top: 1px;
+    padding: 0.3rem;    
     font-family: 'Roboto', sans-serif;
     color: red;
     
   }
   .seccion-descripcion{
+   
     font-size: 1rem;
     color:black;
   }
   .seccion-texto{
-    margin-top: 100px;    
+    margin-top: 2rem;    
     font-size: 1.2rem;
     color: black;
     font-family: 'Roboto', sans-serif;
   }
-  .btn-info{
-    font-size: 1.1rem;
-    margin: 20px;
-    font-weight: bold;
-  }
+  
   .texto-negro{
     color: black;
   }
@@ -94,7 +81,7 @@
     background-position: center; /* Centra la imagen en el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita en el fondo */
     height: 600px;
-    padding: 5px;
+    padding: 0.1rem;
   }
   .sobre-nosotros .contenedor{
     max-width: 500px;
