@@ -12,6 +12,15 @@
   .navbar-collapse{
     align-items: center;
     justify-content: space-between;
+   
+    
+  }
+  
+  .wasap{
+    position: fixed;
+    top: 65%;
+    right: 20px;
+    transform: translateY(-50%);
   }
   .navbar-nav .nav-link {
     color: black;
@@ -22,6 +31,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
  
   .seccion-titulo-t{
@@ -279,19 +289,23 @@
  
   
   /*Media Query, Adaptable (Responsibo)*/
-  
-
-  @media screen and (max-width: 800px) {
-    .testimonio-imagen{
-      height: 120px;
-      width: 120px;
-    }
-    .testimonio-texto{
-      font-size: 18px;
-    }
-  }
+ 
   /* para pantallas pequeñas (menos de 576px) */
 @media (max-width: 575.98px) {
+
+  .wasap{
+    position: fixed;
+    top: 30%;
+    
+    
+  }
+  .section {
+    height: 100vh; /* La altura del section será igual a la altura de la pantalla */
+    width: 100%; /* El ancho del section será igual al ancho de la pantalla */
+    background-color: #ccc; /* Solo para visualizar el section en el ejemplo */
+    box-sizing: border-box; /* Incluir el padding y el borde en el cálculo del ancho y la altura */
+    padding-top: env(safe-area-inset-top); /* Incluir el padding superior seguro para evitar que la barra de navegación oculte el contenido */
+  }
   .modal-body .col {
     flex: 0 0 calc(100% / 0.4); /* ajusta el ancho de las columnas a 50% */
     margin-bottom: 1rem; /* agrega un espacio entre las filas */
