@@ -103,6 +103,7 @@
     border-radius: 25px;
     display: block;
     transition: all 0.2s ease;
+    z-index: 800;
   }
   .proyectos-contenedor{
     padding-top: 0.5rem;
