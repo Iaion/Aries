@@ -92,20 +92,23 @@
   
   .proyectos-recientes{
     padding: 3rem;
+ 
   }
   .proyectos-recientes img{
     height: 100%;
     width: 100%;
-    padding: 5px;
-    border-radius: 15px;
+    padding: 1rem;
+   
+    border-radius: 25px;
     display: block;
     transition: all 0.2s ease;
   }
   .proyectos-contenedor{
-    padding-top: 1px;
-    margin-bottom: 10px;
+    padding-top: 0.5rem;
+    margin-bottom: 3rem;
     
-    max-width: 600px;
+    
+    max-width: 100rem;
   }
   .overlay{
     transition: all 0.2s ease;
@@ -304,3 +307,29 @@
       font-size: 18px;
     }
   }
+  /* para pantallas pequeñas (menos de 576px) */
+@media (max-width: 575.98px) {
+  .modal-body .col {
+    flex: 0 0 calc(100% / 0.4); /* ajusta el ancho de las columnas a 50% */
+    margin-bottom: 1rem; /* agrega un espacio entre las filas */
+  }
+}
+
+/* para pantallas medianas (entre 576px y 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .modal-body .col {
+    flex: 0 0 calc(100% / 3); /* ajusta el ancho de las columnas a 33.33% */
+    margin-bottom: 1rem; /* agrega un espacio entre las filas */
+  }
+}
+
+/* para pantallas grandes y extra grandes (más de 768px) */
+@media (min-width: 768px) {
+  .modal-body .col {
+    flex: 0 0 calc(100% / 3); /* ajusta el ancho de las columnas a 33.33% */
+    margin-bottom: 0; /* elimina el espacio entre las filas */
+  }
+  .modal-body .row:first-child .col:last-child {
+    margin-right: 0; /* elimina el espacio a la derecha de la última columna de la primera fila */
+  }
+}
