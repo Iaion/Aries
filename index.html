@@ -11,13 +11,14 @@
     <title>Aries | Esmaltado de bañeras  </title>
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="imagenes/Logos/logo.jpg">
-   <!-- Iconos de Bootstrap -->
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <!--JQuery-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Iconos de Bootstrap -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!--CSS-->
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">    
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,16 +42,16 @@
         
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#sobre-nosotros">Sobre nosotros</a>
+            <a class="nav-link active" aria-current="page" href="#" data-scroll="#sobre-nosotros">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Los-trabajos-que-realizamos">Los trabajos que realizamos</a>
+            <a class="nav-link" href="#" data-scroll="#Los-trabajos-que-realizamos">Los trabajos que realizamos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonios">Testimonios</a>
+            <a class="nav-link" href="#" data-scroll="#testimonios">Testimonios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contactos</a>
+            <a class="nav-link" href="#" data-scroll="#contacto">Contactos</a>
           </li>
         </ul>
       
@@ -68,7 +69,7 @@
 
     <!--Sobre Nosotros-->
     <section id="sobre-nosotros" class="sobre-nosotros ">
-      <div class="contenedor">
+      <div class="contenedor" >
         <h1 class="seccion-titulo">Aries</h1>
         <h2 class="seccion-subtitulo">Emaltado de bañeras</h2>
         <p class="seccion-texto">Nos dedicamos exclusivamente a la restauración de bañeras y la recuperación del brillo original de su baño.Con mas de X años de experiencia somos los numero uno de Mar del plata y la zona costera.</p>
@@ -167,7 +168,7 @@
     </section>
     <!-- Modal  Bañaderas-->
     <section>
-    <div class="modal fade" id="galeriaB" tabindex="-1" aria-labelledby="galeriaModalLabel" aria-hidden="true">
+    <div class="modal fade" id="galeriaB" tabindex="-1" aria-labelledby="galeriaModalLabel" aria-hidden="true" id="Los-trabajos-que-realizamos">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -632,6 +633,20 @@
     </footer>
     <!-- BOOTSTRAP JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        $('a[data-scroll]').click(function(e) {
+          e.preventDefault();
+          var target = $($(this).attr('data-scroll'));
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+          }
+        });
+      });
+    </script>
+    
   </body>
 </html>
 

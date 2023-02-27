@@ -26,7 +26,15 @@
     color: black;
   }
   /* Estilos generales*/
-  section{
+  body {
+    overflow: hidden;
+  }
+  
+  #sobre-nosotros, #Los-trabajos-que-realizamos, #testimonios, #contacto {
+    overflow: auto;
+    
+  }
+  #sobre-nosotros, #Los-trabajos-que-realizamos, #testimonios{
     display: flex;
     flex-direction: column;
     align-items: center;
