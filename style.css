@@ -16,12 +16,7 @@
     
   }
   
-  .wasap{
-    position: fixed;
-    top: 65%;
-    right: 20px;
-    transform: translateY(-50%);
-  }
+ 
   .navbar-nav .nav-link {
     color: black;
   }
@@ -34,7 +29,7 @@
     overflow: auto;
     
   }
-  #sobre-nosotros, #Los-trabajos-que-realizamos, #testimonios{
+  section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,11 +315,12 @@
   }
 }
 
-/* para pantallas medianas (entre 576px y 767px) */
+/* para pantallas medianas (entre 576px y 767px)*/ 
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .modal-body .col {
     flex: 0 0 calc(100% / 3); /* ajusta el ancho de las columnas a 33.33% */
-    margin-bottom: 1rem; /* agrega un espacio entre las filas */
+    /*margin-bottom: 1rem; /* agrega un espacio entre las filas */
   }
 }
 
