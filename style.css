@@ -21,9 +21,9 @@
     color: black;
   }
   /* Estilos generales*/
-  body {
+  /*body {
     overflow: hidden;
-  }
+  }*/
   
   #sobre-nosotros, #Los-trabajos-que-realizamos, #testimonios, #contacto {
     overflow: auto;
@@ -253,14 +253,14 @@
 
   .footer-texto{
     font-size: 1.3rem;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     font-family: 'Quicksand', sans-serif;
   }
  
   .iconos-redes-sociales a{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +285,7 @@
   
   }
   .derechos-de-autor{
-    font-size: 15px;
+    font-size: 1rem;
     color: #aeaeae;
     padding: 20px;
   }
@@ -295,8 +295,10 @@
  
   /* para pantallas pequeñas (menos de 576px) */
 @media (max-width: 575.98px) {
+ 
 
   section {
+  
     height: 100%; /* La altura del section será igual a la altura de la pantalla */
     width: 100%; /* El ancho del section será igual al ancho de la pantalla */
     background-color: #ccc; /* Solo para visualizar el section en el ejemplo */
