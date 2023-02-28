@@ -161,13 +161,13 @@
   
   /* Testimonios*/
   .testimonios{
-    padding: 40px 40px 80px 40px ;
+    padding: 4rem 2rem 6rem 2rem ;
   }
   .testimonios .carousel{
-    max-width: 800px;
+    max-width:100%;
   }
   .carousel-item{
-    height: 450px;
+    height: 100%;
     
   }
   .carousel-item .container{
@@ -181,13 +181,13 @@
   
   }
   .testimonio-imagen{
-    height: 150px;
-    width: 150px;
-    margin: 10px 10px 20px 10px;
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem 1rem 2rem 1rem;
   }
   .testimonio-texto{
     max-width: 70%;
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
     font-family: 'Share Tech Mono', monospace;  
   }
@@ -207,10 +207,10 @@
   }
   /* Contacto */
   .contacto .container{
-    max-width: 1100px;
-    min-height: 200px;
-    padding: 20px;
-    margin-top: 180px;
+    max-width: 100%;
+    min-height: 50%;
+    padding: 2rem;
+    margin-top: 6rem;
   }
   .contacto .rectangulo{
     margin-top: -6rem;
@@ -259,13 +259,13 @@
   }
  
   .iconos-redes-sociales a{
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;
-    margin: 10px;
+    padding: 0.5rem;
+    margin: 1rem;
     margin-top: 1px;
     border: 2px solid #aeaeae;
     border-radius: 50%;
@@ -296,14 +296,8 @@
   /* para pantallas pequeñas (menos de 576px) */
 @media (max-width: 575.98px) {
 
-  .wasap{
-    position: fixed;
-    top: 30%;
-    
-    
-  }
-  .section {
-    height: 100vh; /* La altura del section será igual a la altura de la pantalla */
+  section {
+    height: 100%; /* La altura del section será igual a la altura de la pantalla */
     width: 100%; /* El ancho del section será igual al ancho de la pantalla */
     background-color: #ccc; /* Solo para visualizar el section en el ejemplo */
     box-sizing: border-box; /* Incluir el padding y el borde en el cálculo del ancho y la altura */
