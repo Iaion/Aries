@@ -12,7 +12,6 @@
   .navbar-collapse{
     align-items: center;
     justify-content: space-between;
-   
     
   }
   
@@ -20,10 +19,9 @@
   .navbar-nav .nav-link {
     color: black;
   }
+  
   /* Estilos generales*/
-  /*body {
-    overflow: hidden;
-  }*/
+  
   
   #sobre-nosotros, #Los-trabajos-que-realizamos, #testimonios, #contacto {
     overflow: auto;
@@ -135,7 +133,7 @@
     text-align: center;
   }
   .overlay p{
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 0;
   }
@@ -154,7 +152,7 @@
   }
   .overlay i{
     color: rgb(66, 23, 13);
-    font-size: 35px;
+    font-size: 2rem;
     margin: 5px;
   }
 
@@ -293,40 +291,30 @@
   
   /*Media Query, Adaptable (Responsibo)*/
  
-  /* para pantallas pequeñas (menos de 576px) */
-@media (max-width: 575.98px) {
  
-
-  section {
+  @media (min-width: 768px) {
+    .navbar {
+      display: flex !important;
+      flex-direction: row !important;
+      
+    }
+    .navbar-collapse {
+      background-color: white;
+    }
   
-    height: 100%; /* La altura del section será igual a la altura de la pantalla */
-    width: 100%; /* El ancho del section será igual al ancho de la pantalla */
-    background-color: #ccc; /* Solo para visualizar el section en el ejemplo */
-    box-sizing: border-box; /* Incluir el padding y el borde en el cálculo del ancho y la altura */
-    padding-top: env(safe-area-inset-top); /* Incluir el padding superior seguro para evitar que la barra de navegación oculte el contenido */
+    .navbar-collapse a {
+      color: red;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link {
+      color: black;
+      font-size: 1rem;
+    }
   }
-  .modal-body .col {
-    flex: 0 0 calc(100% / 0.4); /* ajusta el ancho de las columnas a 50% */
-    margin-bottom: 1rem; /* agrega un espacio entre las filas */
+  
+  @media (max-width: 767px ) {
+    .navbar {
+      display: none !important;
+      
+    }
   }
-}
-
-/* para pantallas medianas (entre 576px y 767px)*/ 
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .modal-body .col {
-    flex: 0 0 calc(100% / 3); /* ajusta el ancho de las columnas a 33.33% */
-    /*margin-bottom: 1rem; /* agrega un espacio entre las filas */
-  }
-}
-
-/* para pantallas grandes y extra grandes (más de 768px) */
-@media (min-width: 768px) {
-  .modal-body .col {
-    flex: 0 0 calc(100% / 3); /* ajusta el ancho de las columnas a 33.33% */
-    margin-bottom: 0; /* elimina el espacio entre las filas */
-  }
-  .modal-body .row:first-child .col:last-child {
-    margin-right: 0; /* elimina el espacio a la derecha de la última columna de la primera fila */
-  }
-}
